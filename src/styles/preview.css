@@ -1,0 +1,56 @@
+.preview-dialog {
+  padding: 2rem;
+  border: none;
+  border-radius: 12px;
+  background: #fff;
+  width: 90%;
+  max-width: 700px;
+  height: fit-content;
+  margin: auto;
+  text-align: center;
+  opacity: 1;
+}
+
+.gallery_image img {
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* .preview-dialog::backdrop {
+  background: rgba(36, 35, 35, 0.6);
+} */
+
+.modal-img {
+  width: 400px;
+  border-radius: 10px;
+  margin-bottom: 0.75rem;
+  margin: 0 auto;
+}
+
+.modal-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0.7rem 0;
+  color: #555;
+}
+
+.modal-description {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.preview-dialog button {
+  background: #555;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+  margin-top: -2px;
+}
+
+.preview-dialog button:hover {
+  background: hsl(0, 0%, 40%);
+}
