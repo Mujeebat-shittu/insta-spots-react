@@ -5,11 +5,7 @@
 }
 
 dialog#editModal {
-  /* display: none; */
   border: none;
-  /* position: fixed; */
-  /* top: 0;
-  left: 0; */
   width: 100vw;
   height: 100vh;
   max-width: 100vw;
@@ -17,11 +13,8 @@ dialog#editModal {
   padding: 0;
   margin: 0;
   background-color: rgba(0, 0, 0, 0.6);
-  /* backdrop-filter: blur(10px); */
   opacity: 1;
   transition: opacity 0.5s ease;
-  /* overflow-y: visible; */
-  /* display: flex; */
   justify-content: center;
   align-items: center;
   z-index: 1000;
@@ -38,8 +31,6 @@ dialog#editModal {
   background-color: transparent;
   text-align: right;
   border: none;
-
-  /* font-size: 2rem; */
   color: #fff;
   cursor: pointer;
 }
@@ -51,7 +42,6 @@ dialog#editModal {
   border-radius: 12px;
   max-width: 400px;
   width: 90%;
-  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); */
   display: flex;
   flex-direction: column;
   column-gap: 2rem;
@@ -85,13 +75,12 @@ dialog#editModal {
 }
 
 .gallery_container {
-  /* width: 100%; */
   width: 92%;
   margin: 0 auto;
   height: auto;
   padding: 0.5rem;
-  /* background-color: #fcf5e5; */
 }
+
 .gallery_grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -143,12 +132,8 @@ dialog#editModal {
 .gallery_1 .content i:hover {
   color: #000;
 }
-/* .thin-line {
-  border: 1.5px solid rgba(33, 33, 33, 0.3);
-  width: 100%;
-  margin: 0.8rem 0;
-} */
-/* MEDIA QUARIES */
+
+/* MEDIA QUERIES */
 
 @media (max-width: 900px) {
   .gallery_grid {
