@@ -8,9 +8,8 @@ import "./styles/profile.css";
 import LikeButton from "./components/like-button";
 import Profile from "./components/profile";
 import Post from "./components/new-post";
-{
-  /*import { useState } from 'react' */
-}
+import { useState } from 'react' 
+
 
 function InstaSpot() {
   function showPreview(imageId) {
@@ -19,6 +18,12 @@ function InstaSpot() {
   function closePreview(imageId) {
     document.getElementById(imageId).close();
   }
+
+  const [allPosts, setAllPosts] = useState([]);
+
+  const handleNewPost = (data) => {
+    setAllPosts((prev) => [...prev, data]);
+  };
 
   return (
     <>
@@ -29,7 +34,7 @@ function InstaSpot() {
 
       <section className="profile">
         <Profile />
-        <Post />
+        <Post onNewPost={handleNewPost} />
       </section>
       <div className="thin-line"></div>
 
@@ -45,13 +50,10 @@ function InstaSpot() {
             />
             <div className="content">
               <p id="text1">Val Thorens</p>
-              {/* static icon with no toggle 
-            <i className="fa-regular fa-heart"></i>
-            */}
               <LikeButton />
             </div>
 
-            {/*} <!-- modal with id valThorens --> */}
+            {/* <!-- modal with id valThorens --> */}
             <dialog id="valThorens" className="preview-dialog">
               <img
                 src="/assets/images/Vals-Thorens.png"
@@ -234,6 +236,34 @@ function InstaSpot() {
               </button>
             </dialog>
           </div>
+
+          {/* Render the post if submitted */}
+      {allPosts.map((post, index) => (
+
+        <div className="gallery_image" key={index}>
+
+          {post.image && (
+            <img
+            src={URL.createObjectURL(post.image)}
+              alt="Uploaded File"
+              className="img6"
+            />
+          )}
+
+          {post.imageUrl && (
+            <img
+              src={post.imageUrl}
+              alt="Image from URL"
+              className="img6"
+            />
+          )}
+
+          <div className="content">
+          <p>{post.name}</p>   
+          <LikeButton />          
+            </div>
+        </div>
+      ))}
         </div>
       </section>
 
