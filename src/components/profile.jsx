@@ -94,6 +94,7 @@ function Profile() {
                   required
                   value={formData.name}
                   onChange={handleChange}
+                  className="text-gray-200"
                 />
                 <label htmlFor="job">Job Title</label>
                 <input
@@ -104,6 +105,7 @@ function Profile() {
                   required
                   value={formData.job}
                   onChange={handleChange}
+                  className="text-gray-200"
                 />
 
                 <input
@@ -113,6 +115,7 @@ function Profile() {
                   accept="image/*"
                   onChange={handleChange}
                   required
+                  className="text-gray-800"
                 />
 
                 <button type="submit" id="saveProfile">
