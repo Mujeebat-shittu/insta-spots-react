@@ -127,9 +127,6 @@ function InstaSpot() {
           />
           <div className="content">
             <p id="text1">Val Thorens</p>
-            {/* static icon with no toggle 
-            <i className="fa-regular fa-heart"></i>
-            */}
             <LikeButton/>
           </div>
 
@@ -159,9 +156,6 @@ function InstaSpot() {
           />
           <div className="content">
             <p id="text2">Restaurant terrace</p>
-            {/* static icon, no toggle 
-            <i className="fa-regular fa-heart"></i> 
-            */}
             <LikeButton/>
           </div>
 
@@ -192,9 +186,6 @@ function InstaSpot() {
           />
           <div className="content">
             <p id="text3">An outdoor cafe</p>
-            {/* static icon, no toggle 
-            <i className="fa-regular fa-heart"></i> 
-            */}
             <LikeButton/>
           </div>
 
@@ -224,9 +215,6 @@ function InstaSpot() {
           />
           <div className="content">
             <p id="text4">A very long bridge, over the forest...</p>
-            {/* static icon, no toggle 
-            <i className="fa-regular fa-heart"></i> 
-            */}
             <LikeButton/>
           </div>
 
@@ -255,9 +243,6 @@ function InstaSpot() {
           />
           <div className="content">
             <p id="text5">Tunnel with morning light</p>
-            {/* static icon, no toggle 
-            <i className="fa-regular fa-heart"></i> 
-            */}
             <LikeButton/>
           </div>
 
@@ -285,10 +270,7 @@ function InstaSpot() {
             onClick={() => showPreview('mountainHouse')}
           />
           <div className="content">
-            <p id="text6">Mountain house</p>
-            {/* static icon, no toggle 
-            <i className="fa-regular fa-heart"></i> 
-            */}
+            <p id="text6">Mountain house</p> 
             <LikeButton/>
           </div>
 

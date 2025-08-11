@@ -1,12 +1,37 @@
-# React + Vite
+# 🌍 InstaSpots
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+InstaSpots is a simple sightseeing postcard app where users can add, view, and personalize location cards. Anyone with the link can contribute by adding postcards (image + place name) to the gallery. It’s a playful way to share beautiful spots — perfect for trip inspiration or just showcasing your favorite places.
 
-Currently, two official plugins are available:
+> ⚠️ Note: This app does not have a database yet, so all changes reset when the page is refreshed.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🖼 **Postcard Gallery** – View a collection of sightseeing spots.
+- ➕ **Add New Spot** – Upload an image and name to share a location.
+- 📝 **Edit Profile** – Change your display name and profile image.
+- 🔄 **Instant Updates** – See changes immediately without page reloads.
+- 📱 **Responsive Design** – Works on mobile, tablet, and desktop.
+
+---
+
+## 🛠 Tech Stack
+
+- **React** – Frontend library
+- **Vanilla CSS** – Styling
+- **Vite** – Development bundler
+
+---
+
+## 🚀 Live Demo  
+[InstaSpots on Netlify](https://insta-spots-react.netlify.app/)
+
+---
+
+## 📦 Installation & Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Mujeebat-shittu/insta-spots.git
+   cd insta-spots
