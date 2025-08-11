@@ -1,3 +1,14 @@
+:root {
+  --header-bg-color: rgba(255, 255, 255, 0.8);
+  --background-color: rgba(252, 245, 229, 1);
+  --bessie-coleman: rgba(33, 33, 33, 1);
+  --civil-aviator: rgba(33, 33, 33, 0.7);
+  --profile-btn: rgba(33, 33, 33, 1);
+  --profile-btn-hover: rgba(33, 33, 33, 0.8);
+  --btn-text-color: rgba(252, 245, 229, 1);
+  --thin-line-border: rgba(33, 33, 33, 0.3);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -79,8 +90,8 @@ dialog#editModal {
   margin: 0 auto;
   height: auto;
   padding: 0.5rem;
-
 }
+
 .gallery_grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -120,6 +131,15 @@ dialog#editModal {
   font-size: 15px;
 }
 
+.gallery_name{
+  flex: 1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+  color: var(--bessie-coleman);
+}
+
 .gallery_1 .content i {
   color: rgb(129, 127, 127);
   font-size: 1.2rem;
@@ -133,12 +153,8 @@ dialog#editModal {
 .gallery_1 .content i:hover {
   color: #000;
 }
-/* .thin-line {
-  border: 1.5px solid rgba(33, 33, 33, 0.3);
-  width: 100%;
-  margin: 0.8rem 0;
-} */
-/* MEDIA QUARIES */
+
+/* MEDIA QUERIES */
 
 @media (max-width: 900px) {
   .gallery_grid {

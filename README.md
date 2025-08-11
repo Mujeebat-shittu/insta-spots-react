@@ -1,6 +1,6 @@
 # 🌍 InstaSpots
 
-InstaSpots is a simple sightseeing postcard app where users can add, view, and personalize location cards. Anyone with the link can contribute by adding postcards (image + place name) to the gallery. It’s a playful way to share beautiful spots — perfect for trip inspiration or just showcasing your favorite places.
+InstaSpots is a simple postcard app where users can add, view, and personalize cards. Anyone with the link can contribute by adding postcards to the gallery. It’s a playful way to share beautiful spots — perfect for trip inspiration or just showcasing your favorite places.
 
 > ⚠️ Note: This app does not have a database yet, so all changes reset when the page is refreshed.
 

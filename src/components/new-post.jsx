@@ -1,15 +1,15 @@
 import { useState } from "react";
 
-function Post() {
+function Post({ onNewPost }) {
   const [postOpen, setPostOpen] = useState(false);
 
-  const [profileInfo, setProfileInfo] = useState({
+ 
+
+  const [postData, setPostData] = useState({
     name: "",
     image: "",
     imageUrl: "",
   });
-
-  const [postData, setPostData] = useState(profileInfo);
 
   const openPost = function () {;
     setPostOpen(true);
@@ -49,12 +49,17 @@ function Post() {
   const handleSubmit = function (e) {
     e.preventDefault();
 
-    setProfileInfo(postData);
 
     console.log("Form submitted:");
     console.log("Name:", postData.name);
     console.log("Image file:", postData.image);
     console.log("Image URL:", postData.imageUrl);
+
+    if (onNewPost) {
+      onNewPost(postData);
+    }
+
+    setPostData({ name: "", image: "", imageUrl: "" });
 
     closeModal();
   };
@@ -90,6 +95,7 @@ function Post() {
                 placeholder="Enter name"
                 required
                 onChange={handleChange}
+                value={postData.name}
                 />
               <input
                 type="file"
@@ -104,6 +110,7 @@ function Post() {
                 placeholder="Image URL"
                 onChange={handleChange}
                 disabled={postData.image}
+                value={postData.imageUrl}
               />
               <button className="submitBtn" type="submit">
                 Add Card
@@ -114,6 +121,8 @@ function Post() {
          
     </>
         )}
+
+        
     </>
   );
 }
